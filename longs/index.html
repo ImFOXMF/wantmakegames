@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лонгриды</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .tile-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .tile {
+            width: calc(50% - 10px);
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .tile:hover {
+            transform: translateY(-5px);
+        }
+        .tile img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .tile-content {
+            padding: 15px;
+        }
+        .tile h3 {
+            margin: 0;
+            color: #333;
+        }
+        .social-links {
+            list-style: none;
+            padding: 0;
+        }
+        .social-links li {
+            margin-bottom: 10px;
+        }
+        .social-links a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h1>Лонгриды</h1>
+        <p>Здесь вы можете прочитать все лонгриды, которые я написал.</p>
+        
+        <div class="tile-container">
+            <a href="/longs/streamergames" class="tile">
+                <img src="/api/placeholder/400/200" alt="Телеграм">
+                <div class="tile-content">
+                    <h3>Телеграм</h3>
+                </div>
+            </a>
+            <a href="/longs/muskempiredeconstruct" class="tile">
+                <img src="https://www.wantmakegames.ru/files/files/muskpreview.png" alt="Телеграм канал">
+                <div class="tile-content">
+                    <h3>Телеграм канал проекта "Хочу делать игры"</h3>
+                </div>
+            </a>
+            <a href="/longs/muskempiredeconstruct" class="tile">
+                <img src="/api/placeholder/400/200" alt="Телеграм канал">
+                <div class="tile-content">
+                    <h3>Телеграм канал проекта "Хочу делать игры"</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Соцсети</h2>
+        <ul class="social-links">
+            <li><a href="/longs/streamergames">Телеграм</a></li>
+            <li><a href="/longs/muskempiredeconstruct">Телеграм канал проекта "Хочу делать игры"</a></li>
+            <li><a href="https://ivankapcov.ru/donation/">Донаты</a></li>
+        </ul>
+        
+        <p>Код этого сайта <a href="https://github.com/ImFOXMF/ivankapcov">открыт</a></p>
+        
+        <p>Иван Капцов, Планета Земля, Измерение C-137</p>
+    </div>
+</body>
+</html>
